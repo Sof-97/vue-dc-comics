@@ -10,7 +10,7 @@
 export default {
 	name: "ListMenu",
 	props: {
-		list: String,
+		list: Array,
 	},
 };
 </script>

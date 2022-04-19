@@ -4,7 +4,9 @@
 			<img src="./assets/img/dc-logo.png" alt="Logo DC Comics" />
 			<HeaderMenu />
 		</header>
-		<MainComp />
+		<main>
+			<MainComp />
+		</main>		
 		<BeforeFooter />
 		<FooterComp />
 	</div>
