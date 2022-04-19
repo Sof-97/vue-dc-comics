@@ -1,0 +1,5 @@
+@mixin menu($orientation){
+    list-style: none;
+    display: flex;
+    flex-direction: #{$orientation};
+}
