@@ -2,9 +2,13 @@
 	<div>
 		<ul>
 			<li :key="i" v-for="(item, i) in shop">
-                <!-- TODO Risolvere url immagini <img  :src="`${item.img}`" alt=""> -->
-                <p>{{item.name}}</p>
-            </li>
+				<img
+					style="width: 100px"
+					:src="require(`../assets/img/${item.img}`)"
+					alt=""
+				/>
+				<p>{{ item.name }}</p>
+			</li>
 		</ul>
 	</div>
 </template>
@@ -17,23 +21,23 @@ export default {
 			shop: [
 				{
 					name: "digital comics",
-					img: "../assets/img/buy-comics-digital-comics.png",
+					img: "buy-comics-digital-comics.png",
 				},
 				{
 					name: "dc merchandise",
-					img: "../assets/img/buy-comics-merchandise.png",
+					img: "buy-comics-merchandise.png",
 				},
 				{
 					name: "subscription",
-					img: "../assets/img/buy-comics-subscriptions.png",
+					img: "buy-comics-subscriptions.png",
 				},
 				{
 					name: "comic shop locator",
-					img: "../assets/img/buy-comics-shop-locator.png",
+					img: "buy-comics-shop-locator.png",
 				},
 				{
 					name: "dc power visa",
-					img: "../assets/img/buy-dc-power-visa.svg",
+					img: "buy-dc-power-visa.svg",
 				},
 			],
 		};
@@ -48,12 +52,19 @@ ul {
 	margin: 0;
 	display: flex;
 	justify-content: center;
-    background-color: $blue;
+	background-color: $blue;
 	@include menu(row);
-	li{
+	padding: 20px 0;
+	li {
+		display: flex;
 		color: white;
 		text-transform: uppercase;
 		margin: 0 15px;
+		align-items: center;
+		img{
+			width: 30px;
+			margin-right: 10px;
+		}
 	}
 }
 </style>

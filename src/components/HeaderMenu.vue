@@ -48,7 +48,6 @@ ul {
 	@include menu(row);
 	li {
 		padding: 20px;
-		cursor: pointer;
 	}
 	.active {
 		color: $blue;

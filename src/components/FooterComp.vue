@@ -19,5 +19,7 @@ export default {
   footer{
     height:300px;
     background-image: url(../assets/img/footer-bg.jpg);
+    display: flex;
+    justify-content: space-around;
   }
 </style>

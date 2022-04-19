@@ -2,4 +2,7 @@
     list-style: none;
     display: flex;
     flex-direction: #{$orientation};
+    li{
+        cursor: pointer;
+    }
 }

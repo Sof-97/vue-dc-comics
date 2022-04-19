@@ -1,11 +1,11 @@
 <template>
 	<div id="app">
 		<header>
-			<img src="./assets/img/dc-logo.png" alt="Logo DC Comics">
-			<HeaderMenu/>
+			<img src="./assets/img/dc-logo.png" alt="Logo DC Comics" />
+			<HeaderMenu />
 		</header>
 		<MainComp />
-		<BeforeFooter/>
+		<BeforeFooter />
 		<FooterComp />
 	</div>
 </template>
@@ -25,22 +25,19 @@ export default {
 		FooterComp,
 	},
 	data() {
-		return {
-		
-		};
+		return {};
 	},
 };
 </script>
 
 <style lang="scss">
-
-@import './style/variables.scss';
+@import "./style/variables.scss";
 
 #app {
 	font-family: helvetica;
-	header{
+	header {
 		max-width: 90%;
-		padding: 15px 0 ;
+		padding: 15px 0;
 		display: flex;
 		justify-content: space-around;
 		text-transform: uppercase;
